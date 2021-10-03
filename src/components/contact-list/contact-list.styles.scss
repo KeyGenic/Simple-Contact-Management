@@ -1,0 +1,16 @@
+
+.position{
+    margin: 50px;
+    display: grid;
+    font-size: 150%;
+    padding: 20px;
+    grid-template-columns: 50px 1fr 1fr 1fr 1fr;
+}
+
+
+
+.contacts{
+    .contact{
+        max-height: 1px;
+    }
+}

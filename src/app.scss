@@ -1,0 +1,12 @@
+.contact-lists{
+    list-style: none;
+}
+
+.header-list{
+    background: red;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 50px;
+    display: grid;
+    font-size: 150%;
+    padding: 20px;
+ }
