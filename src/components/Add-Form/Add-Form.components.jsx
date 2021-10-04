@@ -22,9 +22,17 @@ export const AddForm = (props) => {
     }
 
     const handleChange = (e) => {
+        if(name === ''){
+            alert('Enter your Name')
+        } else if(email === ''){
+            alert('Enter your Email')
+        } else if(number === ''){
+            alert('Enter your Number')
+        }else{
         e.preventDefault()
+        const randomNumber = Math.floor(Math.random()*100000000000)
         props.onSubmit({
-            id:1,
+            id:randomNumber,
             name: name,
             email: email,
             number : number
@@ -32,6 +40,7 @@ export const AddForm = (props) => {
         setName('')
         setEmail('')
         setNumber('')
+    }
     }
 
 

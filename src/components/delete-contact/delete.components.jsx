@@ -1,9 +1,9 @@
 import React from './delete.components';
 import './delete.styles.scss';
 
-function DeleteContact(){
+function DeleteContact({props,id}){
     return(
-        <i class="fas fa-trash trash"></i>
+        <i onClick = { props} class="fas fa-trash trash" id = {id}></i>
     )
 }
 
